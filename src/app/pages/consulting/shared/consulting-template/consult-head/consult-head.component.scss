@@ -44,7 +44,8 @@
   }
   figure {
     img {
-      height: 4rem;
+      min-height: 4rem;
+      max-height: 4rem;
       opacity: 0.7;
       filter: drop-shadow(1px 1px 1px #777);
     }

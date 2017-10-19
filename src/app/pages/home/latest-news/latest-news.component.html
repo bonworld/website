@@ -15,7 +15,7 @@
           <br>
           {{parseDate(latest.pubDate).toString().split(" ")[1]}}
         </h6>
-        <img [lazyLoad]="blogImg(latest.description)" [alt]="latest.title">
+        <img class="blog-thumbnail" [lazyLoad]="blogImg(latest.description)" [alt]="latest.title">
         <h6 class="news-title">{{latest.title}}</h6>
         <p class="news-heading" [innerHtml]="parseHeading(latest.description)"></p>
         <aw-read-more-link isExternalLink="true" link="{{latest.link}}"></aw-read-more-link>
