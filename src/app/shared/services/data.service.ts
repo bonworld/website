@@ -27,7 +27,7 @@ export class DataService {
     return this.http
       .get(url)
       .map(res => res.json().items as Array<Feed>)
-      .publishReplay(1).refCount();
+      .share();
   }
 
   get services() { return SERVICE_DATA; }
