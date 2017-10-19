@@ -12,13 +12,15 @@ import { LetsBuildBtnComponent } from './lets-build-btn/lets-build-btn.component
 import { ReadMoreLinkComponent } from './read-more-link/read-more-link.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HireUsFormComponent } from './hire-us-form/hire-us-form.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
     BsDropdownModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LazyLoadImageModule
   ],
   declarations: [
     LetsBuildBtnComponent,
@@ -36,7 +38,8 @@ import { HireUsFormComponent } from './hire-us-form/hire-us-form.component';
     FooterComponent,
     ResizePipe,
     CDNPipe,
-    HireUsFormComponent
+    HireUsFormComponent,
+    LazyLoadImageModule
   ],
   providers: [
     DataService,

@@ -35,8 +35,9 @@
           }
         }
         img {
-          width: 100%;
           background-color: lightgray;
+          min-height: 12rem;
+          min-width: 100%;
         }
         .date {
           background-color: rgba(255, 255, 255, 0.5);
