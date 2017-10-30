@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkedWithComponent implements OnInit {
   clientList = CLIENT_DATA;
+  marquee_reapeat = new Array(3);
 
   constructor() { }
 
