@@ -42,6 +42,25 @@ export const CLIENT_DATA = [
           future.`
   },
   {
+    name: 'Crowdmobile',
+    logo: 'crowdmobile',
+    desc: `Crowd Mobile delivers mobile content including games, mobile
+          security, applications, education, music and videos to millions
+          of consumers across the world. We promote our mobile products
+          across targeted websites and via marketing agencies.`
+  },
+  {
+    name: 'Cashcowpro',
+    logo: 'cashcowpro',
+    desc: `Includes ALL the features you need to run & grow your Amazon
+          business, from automatic messaging for feedback to keyword tracking.`
+  },
+  {
+    name: 'Kyero',
+    logo: 'kyero',
+    desc: `Find your dream home. 200,000 properties for sale and rent from estate agents in Spain and Portugal`
+  },
+  {
     name: 'Citzy',
     logo: 'citzy',
     desc: `CITZY.COM is the fastest growing classifieds website in the Middle
