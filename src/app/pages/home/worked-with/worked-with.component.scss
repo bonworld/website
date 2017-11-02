@@ -30,7 +30,7 @@
         }
       }
 
-      &:hover {
+      &:hover, &:active {
         .marquee {
           -webkit-animation-play-state: paused;
           -moz-animation-play-state: paused;
