@@ -53,7 +53,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-5 col-md-6">
-              <img offset="100" [lazyLoad]="'large-' + service.icon | cdn" alt="{{service.name}}">
+              <img [offset]="100" [lazyLoad]="'large-' + service.icon | cdn" alt="{{service.name}}">
             </div>
             <div class="col-12 col-md-6 col-lg-7 service-summary" routerLink="{{service.link}}">
               <legend>{{service.name}}</legend>
