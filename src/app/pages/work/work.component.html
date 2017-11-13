@@ -15,7 +15,7 @@
 
       <div class="col-12 col-md-8 col-lg-7 mt-5">
         <div class="work-image" [ngStyle]="{'background': case.color.bg}">
-          <img [lazyLoad]="case.img | cdn | resize:'w_520'" [alt]="case.name">
+          <img offset="100" [lazyLoad]="case.img | cdn | resize:'w_520'" [alt]="case.name">
         </div>
       </div>
 
