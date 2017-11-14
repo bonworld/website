@@ -32,31 +32,6 @@
     .work-body {
       font-size: 1.125rem;
     }
-    .headline {
-      display: inline-block;
-      position: relative;
-      font-size: 1rem;
-      font-weight: 700;
-      left: 50%;
-      transform: translateX(-50%);
-      text-transform: uppercase;
-      margin-bottom: 3rem;
-    }
-    .headline:before,
-    .headline:after {
-      content: "";
-      width: 20px;
-      height: 1px;
-      background-color: #e0e0e0;
-      position: absolute;
-      top: 50%;
-    }
-    .headline:before {
-      left: -44px;
-    }
-    .headline:after {
-      right: -44px;
-    }
     &:hover {
       .work-image {
         border-color: #666;
@@ -70,6 +45,31 @@
         }
       }
     }
+  }
+  .headline {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  .headline:before,
+  .headline:after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 50%;
+  }
+  .headline:before {
+    left: -44px;
+  }
+  .headline:after {
+    right: -44px;
   }
 }
 
