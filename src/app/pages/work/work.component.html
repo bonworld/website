@@ -1,16 +1,16 @@
 <div class="jumbotron jumbotron-box-inset-shadow bg-light">
   <div class="container">
-    <div class="row mt-5" *ngFor="let case of case_study; let i = index">
+    <a class="row mt-5 text-dark nounderline case-study" target="_blank" href="{{case.link}}" *ngFor="let case of case_study; let i = index">
       <div class="col-12 col-md-4 col-lg-5" *ngIf="(i % 2) == 0">
         <h1 class="work-title">{{case.name}}</h1>
         <p class="work-body">{{case.heading}}</p>
-        <aw-read-more-link [isExternalLink]="false" route="{{case.link}}"></aw-read-more-link>
+        <aw-read-more-link [isExternalLink]="true" link="{{case.link}}"></aw-read-more-link>
       </div>
 
       <div class="col-12 col-md-4 col-lg-5 d-lg-none d-md-none" *ngIf="(i % 2) != 0">
         <h1 class="work-title">{{case.name}}</h1>
         <p class="work-body">{{case.heading}}</p>
-        <aw-read-more-link [isExternalLink]="false" route="{{case.link}}"></aw-read-more-link>
+        <aw-read-more-link [isExternalLink]="true" link="{{case.link}}"></aw-read-more-link>
       </div>
 
       <div class="col-12 col-md-8 col-lg-7 mt-5">
@@ -22,9 +22,9 @@
       <div class="col-12 col-md-4 col-lg-5 hide-mobile" *ngIf="(i % 2) != 0">
         <h1 class="work-title">{{case.name}}</h1>
         <p class="work-body">{{case.heading}}</p>
-        <aw-read-more-link [isExternalLink]="false" route="{{case.link}}"></aw-read-more-link>
+        <aw-read-more-link [isExternalLink]="true" link="{{case.link}}"></aw-read-more-link>
       </div>
-    </div>
+    </a>
   </div>
 </div>
 

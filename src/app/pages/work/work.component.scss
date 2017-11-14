@@ -5,60 +5,71 @@
     color: black;
     margin-bottom: 1rem;
   }
-  .work-image {
-    padding: 1rem 2rem;
-    border: 1px solid transparent;
-    transition: all 0.3s;
-    @media (max-width: 756px) {
-      padding: 1rem 1rem;
+  .case-study {
+    .work-image {
+      padding: 1rem 2rem;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+      @media (max-width: 756px) {
+        padding: 1rem 1rem;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .work-title {
+      margin-top: 6rem;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      font-weight: 700;
+      @media (max-width: 767px) {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+    }
+    .work-body {
+      font-size: 1.125rem;
+    }
+    .headline {
+      display: inline-block;
+      position: relative;
+      font-size: 1rem;
+      font-weight: 700;
+      left: 50%;
+      transform: translateX(-50%);
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+    .headline:before,
+    .headline:after {
+      content: "";
+      width: 20px;
+      height: 1px;
+      background-color: #e0e0e0;
+      position: absolute;
+      top: 50%;
+    }
+    .headline:before {
+      left: -44px;
+    }
+    .headline:after {
+      right: -44px;
     }
     &:hover {
-      border: 1px solid #666;
-      box-shadow: 0 0 15px #888;
+      .work-image {
+        border-color: #666;
+        box-shadow: 0 0 10px #888;
+      }
+      aw-read-more-link {
+        /deep/ .read-more {
+          .icon-right-open:before {
+            transform: translateX(120%) scale(1.2);
+          }
+        }
+      }
     }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-  .work-title {
-    margin-top: 6rem;
-    margin-bottom: 1rem;
-    font-size: 3rem;
-    font-weight: 700;
-    @media (max-width: 767px) {
-      margin-top: 0;
-      font-size: 2rem;
-    }
-  }
-  .work-body {
-    font-size: 1.125rem;
-  }
-  .headline {
-    display: inline-block;
-    position: relative;
-    font-size: 1rem;
-    font-weight: 700;
-    left: 50%;
-    transform: translateX(-50%);
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-  }
-  .headline:before,
-  .headline:after {
-    content: "";
-    width: 20px;
-    height: 1px;
-    background-color: #e0e0e0;
-    position: absolute;
-    top: 50%;
-  }
-  .headline:before {
-    left: -44px;
-  }
-  .headline:after {
-    right: -44px;
   }
 }
 
