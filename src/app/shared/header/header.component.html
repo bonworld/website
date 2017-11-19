@@ -16,8 +16,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <ul *dropdownMenu class="dropdown-menu" role="menu">
-            <li role="menuitem" *ngFor="let nav of navItems">
+            <li role="menuitem" *ngFor="let nav of navItems; trackBy: trackByFn">
               <a class="dropdown-item" [routerLink]='nav.url'>{{nav.name}}</a>
+            </li>
+            <li role="menuitem">
+              <a class="dropdown-item" href='https://github.com/aviabird'>OPENSOURCE</a>
             </li>
           </ul>
         </div>
@@ -25,6 +28,9 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"  *ngFor="let nav of navItems; trackBy: trackByFn">
               <a class="nav-link" [routerLink]='nav.url'>{{nav.name}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='https://github.com/aviabird'>OPENSOURCE</a>
             </li>
           </ul>
         </div>
