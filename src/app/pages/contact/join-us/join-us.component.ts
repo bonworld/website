@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { environment } from 'environments/environment';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
@@ -21,12 +22,14 @@ export class JoinUsComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private router: Router,
-    private http: Http
+    private http: Http,
+    private ts: Title
   ) {
     this.createForm();
   }
 
   ngOnInit() {
+    this.ts.setTitle('Join Our Family. Expand Your Skills. - Work at AviaBird');
   }
 
   createForm() {

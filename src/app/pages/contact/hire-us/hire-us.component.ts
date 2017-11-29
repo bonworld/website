@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Http } from '@angular/http';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
@@ -11,9 +12,10 @@ import { Router } from '@angular/router';
 export class HireUsComponent implements OnInit {
 
   constructor(
-  ) {
-  }
+    private ts: Title
+  ) {}
 
   ngOnInit() {
+    this.ts.setTitle('Let Us Develop Your Solution - Hire AviaBird');
   }
 }

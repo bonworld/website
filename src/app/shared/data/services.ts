@@ -8,6 +8,7 @@ export const serviceNames = {
 export const SERVICE_DATA = [
   {
     name: serviceNames.Design,
+    title: 'Expert User Experience Design Consulting and Development Services - AviaBird',
     summary: `Through data and user research, experimentation,
               and testing, we ensure what we’re building engages
               with your users the way they want.`,
@@ -41,6 +42,7 @@ export const SERVICE_DATA = [
   },
   {
     name: serviceNames.Engineering,
+    title: 'Full Stack Web and Mobile Application Development Services - AviaBird',
     summary: `Using the best technologies for progressive web
               apps our engineers expertly architect and implement
               quality code that is cost effective for you, and is
@@ -76,6 +78,7 @@ export const SERVICE_DATA = [
   },
   {
     name: serviceNames.Technology,
+    title: 'Expert Angular, Elixir, and Phoenix Consulting and Development Services - AviaBird',
     summary: `We use technologies proven and supported by a large
               open-source community and adopted by leading companies
               like Apple, Netflix, Microsoft, and IBM.`,
@@ -124,6 +127,7 @@ export const SERVICE_DATA = [
     summary: `We provide insight, resources, and the knowledge your
               team can learn and grow from to ensure comfort and
               success moving forward.`,
+    title: 'Services for Angular, Elixir, and Progressive Web Apps - AviaBird',
     icon: 'support.svg',
     link: '/services/support',
     articles: [

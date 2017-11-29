@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { DataService } from '../../shared/services/data.service';
 import { fadeInAnimation } from 'app/shared/animations';
@@ -13,9 +14,12 @@ export class WhyAviabirdComponent implements OnInit {
   @HostBinding('@fadeInAnimation')
   public animatePage = true;
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService, private ts: Title) { }
 
   ngOnInit() {
+    this.ts.setTitle(
+      'We Safely and Successfully Transition You to New Technologies - AviaBird'
+    );
   }
 
   get services() { return this.data.services; }

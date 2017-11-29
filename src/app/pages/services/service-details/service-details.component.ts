@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { DataService } from 'app/shared/services/data.service';
 
@@ -10,9 +11,10 @@ import { DataService } from 'app/shared/services/data.service';
 export class ServiceDetailsComponent implements OnInit {
   @Input() service;
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService, private ts: Title) { }
 
   ngOnInit() {
+    this.ts.setTitle(this.service.title);
   }
 
   get services() {

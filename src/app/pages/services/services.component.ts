@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { fadeInAnimation } from 'app/shared/animations';
 
@@ -11,10 +12,13 @@ import { fadeInAnimation } from 'app/shared/animations';
 export class ServicesComponent implements OnInit {
   @HostBinding('@fadeInAnimation')
   public animatePage = true;
-  
-  constructor() { }
+
+  constructor(private ts: Title) { }
 
   ngOnInit() {
+    this.ts.setTitle(
+      'Design, Development, Technology, and Training Services - AviaBird'
+    )
   }
 
 }

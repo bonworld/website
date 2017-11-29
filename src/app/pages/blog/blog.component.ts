@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { DataService, Feed } from './../../shared/services/data.service';
 import { Observable } from 'rxjs/Observable';
 import { Component, OnInit, AfterViewInit, ElementRef, HostBinding, ChangeDetectionStrategy, OnDestroy } from '@angular/core';
@@ -20,10 +21,13 @@ export class BlogComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private data: DataService,
     private elementRef: ElementRef,
-    private canvasAnimate: CanvasAnimateService) { }
+    private canvasAnimate: CanvasAnimateService,
+    private ts: Title
+  ) { }
 
   ngOnInit() {
     this.rssFeeds$ = this.data.medium_feeds();
+    this.ts.setTitle('Blog - Aviabird Technologies');
   }
 
   get menuItems() { return this.data.blog_menu_items; }

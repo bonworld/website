@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { CLIENT_DATA } from './../../shared/data/clients';
 import { Component, OnInit, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { CASE_STUDY_DATA } from 'app/shared/data/case-study';
@@ -17,9 +18,12 @@ export class WorkComponent implements OnInit {
   @HostBinding('@fadeInAnimation')
   public animatePage = true;
 
-  constructor() { }
+  constructor(private ts: Title) { }
 
   ngOnInit() {
+    this.ts.setTitle(
+      'Well Designed Solutions that Solve Business Challenges - AviaBird'
+    );
   }
 
 }
